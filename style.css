@@ -1,0 +1,122 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #FFF3E5;
+    --white : #FFFFFF;
+    --black : #222222;
+    --placeholder : #A4A4A4;
+}
+
+body {
+    background: var(--bg-color);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin: 75px 0;
+    text-align: center;
+}
+
+h1 span {
+    font-style: italic;
+}
+
+
+.cont-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    background: url('assets/backgound.jpg');
+    background-position: center;
+    height: 250px;
+
+}
+
+.cont-input h3 {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.cont-input form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--white);
+    padding: 12px 20px;
+    border-radius: 9999px;
+}
+
+
+form input::placeholder {
+    color: var(--placeholder);
+    font-size: 20px;
+    font-style: italic;
+}
+
+form input {
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background: none;
+    border: none;
+}
+
+.cont-list {
+    margin: 70px auto 0;
+    width: 600px;
+}
+
+.cont-list h2 {
+    font-size: 30px;
+}
+
+.list {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px var(--black);
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+.item button {
+    border: none;
+    background: none;
+}
+
+.item:nth-child(odd) {
+    background: var(--white);
+    color: var(--black);
+}
+
+.item:nth-child(even) {
+    background: var(--black);
+    color: var(--white);
+}
